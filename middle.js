@@ -36,15 +36,14 @@ const findMiddle = function(myArray) {
     return arrMiddle;
   }
   if (isItEven(myArray)) {
-    arrMiddle.push(myArray[Math.floor(myArray.length/2-1)]);
-    arrMiddle.push(myArray[(Math.floor(myArray.length/2-1)) + 1]);
+    arrMiddle.push(myArray[Math.floor(myArray.length / 2 - 1)]);
+    arrMiddle.push(myArray[(Math.floor(myArray.length / 2 - 1)) + 1]);
   } else {
-    arrMiddle.push(myArray[Math.floor(myArray.length/2)]);
+    arrMiddle.push(myArray[Math.floor(myArray.length / 2)]);
   }
   return arrMiddle;
 };
 
-//check 
 assertArraysEqual([findMiddle([1,2,3])], [2]);
 
 
