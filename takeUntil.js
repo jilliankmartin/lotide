@@ -19,12 +19,12 @@ const assertArraysEqual = function(array1, array2) {
 // SOLUTION
 
 const takeUntil = function(array, callback) {
-  newArr = [];
+  const newArr = [];
   for (const item of array) { //loop throgh the array
     if (callback(item)) { //check if the callback returns true when the array item is passed into it
-      break //if yes stop
+      break; //if yes stop
     } else {
-      newArr.push(item) //if no push the item into a new array
+      newArr.push(item); //if no push the item into a new array
     }
   }
   return newArr; //return the array
